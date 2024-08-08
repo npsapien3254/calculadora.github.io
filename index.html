@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main class="campo-calculadora">
+        <form name="calculadora" id="calculadora">
+            <input id="ans" type="textfield" name="ans" value="" autocomplete="off" readonly>
+            <br/>
+            <input type="button" value="7" onclick="añadir(7)">
+            <input type="button" value="8" onclick="añadir(8)">
+            <input type="button" value="9" onclick="añadir(9)">
+            <input class="ope" type="button" value="C" onclick="borrar()">
+            <br/>
+            <input type="button" value="4" onclick="añadir(4)">
+            <input type="button" value="5" onclick="añadir(5)">
+            <input type="button" value="6" onclick="añadir(6)">
+            <input class="ope" type="button" value="+" onclick="verOpe('+')">
+            <br/>
+            <input type="button" value="1" onclick="añadir(1)">
+            <input type="button" value="2" onclick="añadir(2)">
+            <input type="button" value="3" onclick="añadir(3)">
+            <input class="ope" type="button" value="-" onclick="verOpe('-')">
+            <br/>
+            <input type="button" value="0" onclick="añadir(0)">
+            <input type="button" value="." onclick="añadir('.')">
+            <input class="ope" type="button" value="X" onclick="verOpe('*')">
+            <input class="ope" type="button" value="/" onclick="verOpe('/')">
+            <input class="ope" type="button" value="=" onclick="calcular()">
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
